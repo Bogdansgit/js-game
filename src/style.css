@@ -1,0 +1,70 @@
+.game-box {
+    width: 800px;
+	margin: 20px auto;
+	background-color: grey;
+	border-radius: 20px;
+}
+
+.game-box__screen {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+	background-color: antiquewhite;
+	border: 10px solid grey;
+	border-radius: 20px;
+}
+
+.game-box__controller {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 0;
+}
+
+.game-box__controller button {
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.game-box__controller button:hover {
+    background-color: gray;
+    color: #fff;
+}
+
+.game-box__controller button:first-child {
+    margin-right: 10px;
+}
+
+.shape {
+    position: absolute;
+    bottom: 0;
+}
+
+.shape--circle {
+    border-radius: 100%;
+}
+
+.shape--triangle {
+    height: 0;
+    border-top: 25% solid transparent;
+	border-left: 50% solid orange;
+	border-bottom: 25% solid transparent;
+}
+
+.game-box__controller__counter {
+    margin-left: auto;
+    width: 95px;
+    height: 35px;
+    background: #fff;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

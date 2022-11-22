@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="index.js" defer></script>
+		<title>Document</title>
+	</head>
+
+	<body>
+		<div class="game-box">
+			<div class="game-box__screen" onchange="figureCount()">
+			</div>
+			<div class="game-box__controller">
+			  <button onclick="activate()" class="start">Start</button>
+			  <button onclick="disable()" class="stop">Stop</button>
+			  <button onclick="addNewShape()" disabled class="add">Add</button>
+			  <button onclick="removeShape()" disabled class="remove">Remove</button>
+			  <div class="game-box__controller__counter">Counter:&nbsp;<span>0</span></div>
+			</div>
+		  </div>
+	</body>
+
+</html>
